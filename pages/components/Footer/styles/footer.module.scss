@@ -1,0 +1,23 @@
+@import "../../../../styles/variables";
+
+.siteFooter {
+  background: $primary-color;
+  padding: 2rem;
+  text-align: center;
+  p {
+    font-size: 0.8rem;
+  }
+  .name {
+    text-transform: uppercase;
+  }
+  .githubLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    svg {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+}

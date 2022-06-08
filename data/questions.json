@@ -1,0 +1,70 @@
+{
+  "Items": [
+    {
+      "id": "1",
+      "question": "What is scoping?",
+      "answer": "The current context of execution. The context in which values and expressions are \"visible\" or can be referenced.",
+      "sourceLink": "https://developer.mozilla.org/en-US/docs/Glossary/Scope"
+    },
+    {
+      "id": "2",
+      "question": "What is hoisting?",
+      "answer": "Hoisting allows functions to be safely used in code before they are declared.",
+      "sourceLink": "https://developer.mozilla.org/en-US/docs/Glossary/Hoisting"
+    },
+    {
+      "id": "3",
+      "question": "What is a closure?",
+      "answer": "A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function.",
+      "sourceLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures"
+    },
+    {
+      "id": "4",
+      "question": "What is lexical scoping?",
+      "answer": "inner functions have access to the variables of outer functions",
+      "sourceLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures"
+    },
+    {
+      "id": "5",
+      "question": "Difference between == and ===?",
+      "answer": "The main difference between the == and === operator in javascript is that the == operator does the type conversion of the operands before comparison, whereas the === operator compares the values as well as the data types of the operands.",
+      "sourceLink": "https://www.scaler.com/topics/javascript/difference-between-double-equals-and-triple-equals-in-javascript/"
+    },
+    {
+      "id": "6",
+      "question": "What's the result of comparing two objects with == and ===?",
+      "answer": "Usually, when you compare data types like int and strings in JavaScript, you use the equality operators (== and ===). However, comparing objects with == and === will not work. It will result in false. In Javascript objects and arrays are passed by reference.",
+      "sourceLink": "https://flexiple.com/javascript-pass-by-reference-or-value/#:~:text=In%20Pass%20by%20Reference%2C%20a,arrays%20are%20passed%20by%20reference."
+    },
+    {
+      "id": "7",
+      "question": "What does the call method do?",
+      "answer": "The call() method calls a function with a given this value and arguments provided individually.",
+      "sourceLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call"
+    },
+    {
+      "id": "8",
+      "question": "What does the apply method do?",
+      "answer": "The apply() method calls a function with a given this value, and arguments provided as an array (or an array-like object).",
+      "sourceLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply"
+    },
+    {
+      "id": "9",
+      "question": "What does the apply bind do?",
+      "answer": "The bind() method creates a new function that, when called, has its this keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.",
+      "sourceLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind"
+    },
+    {
+      "id": "10",
+      "question": "What is an arrow function",
+      "answer": "An arrow function expression is a compact alternative to a traditional function expression, but is limited and can't be used in all situations. Arrow functions don't have their own bindings to this, arguments or super, and should not be used as methods.",
+      "sourceLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions"
+    },
+    {
+      "id": "11",
+      "question": "What is a higher order function",
+      "answer": "A higher order function is a function that takes a function as an argument, or returns a function. Higher order function is in contrast to first order functions, which don’t take a function as an argument or return a function as output.",
+      "sourceLink": "https://medium.com/javascript-scene/higher-order-functions-composing-software-5365cf2cbe99#:~:text=A%20higher%20order%20function%20is,return%20a%20function%20as%20output."
+    }
+  ]
+}

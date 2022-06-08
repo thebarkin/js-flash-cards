@@ -1,0 +1,18 @@
+@import "../../../../styles//variables.scss";
+
+.siteHeader {
+  background: $primary-color;
+  padding: 2rem 1rem;
+  text-align: center;
+  position: relative;
+  .titleContainer {
+    h1 {
+      margin: 0;
+    }
+  }
+  .jsLogoContainer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
