@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import { Header } from "./components/Header";
-import { PageContentContainer } from "./components/PageContentContainer";
-import { PageIntroCopy } from "./components/PageIntroCopy";
-import { FlipCard } from "./components/FlipCard";
-import { Footer } from "./components/Footer";
+import Header from "./components/Header";
+import PageContentContainer from "./components/PageContentContainer";
+import PageIntroCopy from "./components/PageIntroCopy";
+import FlipCard from "./components/FlipCard";
+import Footer from "./components/Footer";
 import questions from "../data/questions.json";
 
 const Home: NextPage = () => {

@@ -3,7 +3,7 @@ import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./styles/footer.module.scss";
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer className={styles.siteFooter}>
       <p>
@@ -26,3 +26,5 @@ export const Footer = () => {
     </footer>
   );
 };
+
+export default Footer;

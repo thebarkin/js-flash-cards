@@ -6,12 +6,12 @@ interface IPageContentContainerProps {
   children: React.ReactNode;
 }
 
-export const PageContentContainer = ({
-  children,
-}: IPageContentContainerProps) => {
+const PageContentContainer = ({ children }: IPageContentContainerProps) => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>{children}</div>
     </section>
   );
 };
+
+export default PageContentContainer;

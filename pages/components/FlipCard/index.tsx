@@ -10,7 +10,7 @@ interface IFlipCardProps {
   sourceLink?: string;
 }
 
-export const FlipCard = ({ question, answer, sourceLink }: IFlipCardProps) => {
+const FlipCard = ({ question, answer, sourceLink }: IFlipCardProps) => {
   const [isShowAnswer, setIsShowAnswer] = useState<boolean>(false);
 
   const handleShowAnswer = (): void => {
@@ -41,9 +41,16 @@ export const FlipCard = ({ question, answer, sourceLink }: IFlipCardProps) => {
           </div>
         </div>
       </div>
-      <button className={styles.answerButton} onClick={handleShowAnswer}>
+      <button
+        className={`${styles.answerButton} ${
+          isShowAnswer ? styles.newAnswerButton : ""
+        }`}
+        onClick={handleShowAnswer}
+      >
         {!isShowAnswer ? "Show Answer" : "Next Question"}
       </button>
     </>
   );
 };
+
+export default FlipCard;
