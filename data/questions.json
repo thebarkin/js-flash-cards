@@ -38,19 +38,19 @@
     },
     {
       "id": "7",
-      "question": "What does the call method do?",
+      "question": "What does the call() method do?",
       "answer": "The call() method calls a function with a given this value and arguments provided individually.",
       "sourceLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call"
     },
     {
       "id": "8",
-      "question": "What does the apply method do?",
+      "question": "What does the apply() method do?",
       "answer": "The apply() method calls a function with a given this value, and arguments provided as an array (or an array-like object).",
       "sourceLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply"
     },
     {
       "id": "9",
-      "question": "What does the apply bind do?",
+      "question": "What does the bind() method do?",
       "answer": "The bind() method creates a new function that, when called, has its this keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.",
       "sourceLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind"
     },
@@ -65,6 +65,30 @@
       "question": "What is a higher order function",
       "answer": "A higher order function is a function that takes a function as an argument, or returns a function. Higher order function is in contrast to first order functions, which don’t take a function as an argument or return a function as output.",
       "sourceLink": "https://medium.com/javascript-scene/higher-order-functions-composing-software-5365cf2cbe99#:~:text=A%20higher%20order%20function%20is,return%20a%20function%20as%20output."
+    },
+    {
+      "id": "12",
+      "question": "What is event bubbling?",
+      "answer": "Event bubbling is a method of event propagation in the HTML DOM API when an event is in an element inside another element, and both elements have registered a handle to that event. It is a process that starts with the element that triggered the event and then bubbles up to the containing elements in the hierarchy. In event bubbling, the event is first captured and handled by the innermost element and then propagated to outer elements.",
+      "sourceLink": "https://www.geeksforgeeks.org/event-bubbling-in-javascript/"
+    },
+    {
+      "id": "13",
+      "question": "Explain event loop.",
+      "answer": "JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks. ",
+      "sourceLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop"
+    },
+    {
+      "id": "14",
+      "question": "What is the use of 'this' keyword?",
+      "answer": "In general, the this references the object of which the function is a property. In other words, the this references the object that is currently calling the function.",
+      "sourceLink": "https://www.javascripttutorial.net/javascript-this/"
+    },
+    {
+      "id": "15",
+      "question": "What is the difference between 'let' and 'var'?",
+      "answer": "let allows you to declare variables that are limited in scope to the block, statement, or expression on which it is used. This is unlike the var keyword, which defines a variable globally, or locally to an entire function regardless of block scope.",
+      "sourceLink": "https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var#:~:text=let%20allows%20you%20to%20declare,function%20regardless%20of%20block%20scope."
     }
   ]
 }
