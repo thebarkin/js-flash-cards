@@ -6,7 +6,6 @@
   perspective: 600;
   position: relative;
   margin: 4rem auto;
-  will-change: transform;
   .card {
     position: absolute;
     height: 100%;
@@ -17,6 +16,7 @@
     border: 1px solid #ccc;
     background: #f6f6f6;
     box-shadow: 0 0 5rem #ccc;
+    will-change: transform;
   }
   .side {
     backface-visibility: hidden;
