@@ -6,6 +6,7 @@
   perspective: 600;
   position: relative;
   margin: 4rem auto;
+  will-change: transform;
   .card {
     position: absolute;
     height: 100%;
