@@ -36,13 +36,7 @@ const FlipCard = ({ question, answer, sourceLink }: IFlipCardProps) => {
           </div>
         </div>
       </div>
-      {isShowAnswer && (
-        <div className={styles.sourceContainer}>
-          <a href={sourceLink} rel="noreferrer" target="_blank">
-            Source <FontAwesomeIcon icon={faSquareArrowUpRight} />
-          </a>
-        </div>
-      )}
+
       <button
         className={`${styles.answerButton} ${
           isShowAnswer ? styles.newAnswerButton : ""
@@ -51,6 +45,13 @@ const FlipCard = ({ question, answer, sourceLink }: IFlipCardProps) => {
       >
         {!isShowAnswer ? "Show Answer" : "Next Question"}
       </button>
+      {isShowAnswer && (
+        <div className={styles.sourceContainer}>
+          <a href={sourceLink} rel="noreferrer" target="_blank">
+            Source <FontAwesomeIcon icon={faSquareArrowUpRight} />
+          </a>
+        </div>
+      )}
     </>
   );
 };

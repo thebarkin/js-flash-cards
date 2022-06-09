@@ -88,7 +88,19 @@
       "id": "15",
       "question": "What is the difference between 'let' and 'var'?",
       "answer": "let allows you to declare variables that are limited in scope to the block, statement, or expression on which it is used. This is unlike the var keyword, which defines a variable globally, or locally to an entire function regardless of block scope.",
-      "sourceLink": "https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var#:~:text=let%20allows%20you%20to%20declare,function%20regardless%20of%20block%20scope."
+      "sourceLink": "https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var#:~:text=let%20allows%20you%20to%20declare,function%20regardless%20of%20block%20scope"
+    },
+    {
+      "id": "16",
+      "question": "How does JavaScript work?",
+      "answer": "JavaScript is a single threaded language. Browser executes the JS file using the V8 JS Engine, which converts JS code into machine readable code (binary). The JS Engine includes the 'Memory Heap' and the 'Call Stack'. The 'Memory Heap' stores variables. Global variables can result in a memory leak, since they remain throughout the execution of the program. The 'Call Stack' is where executable code is executed. Once a function is called, it will be pushed out of the 'Call Stack'. Inside of the 'Call Stack' you can only execute one task at a time. You can't have multiple statements executed at the same time. The JavaScript runtime environment helps with asynchronous code (e.g. setTimeout() which part of the web API). The 'Stack' pushes the asynchronous code to the Web API, which will process the request and send callbacks to the 'Callback queue'. The 'Callback queue' is first come, first serve. The 'Event loop' will keep checking if the 'Stack' is empty, and if it is empty, the 'Event loop' will check the 'Callback queue' and if it finds a callback to execute, it will push it to the 'Stack'.",
+      "sourceLink": "https://www.youtube.com/watch?v=m0_e9hvLZpw&list=PLADp2tn-qPswTdgNuAakyYAvDCp8tqcQW&index=1"
+    },
+    {
+      "id": "17",
+      "question": "What is the execution context?",
+      "answer": "Coming soon...",
+      "sourceLink": ""
     }
   ]
 }
