@@ -3,9 +3,8 @@
 .container {
   max-width: 600px;
   min-height: 400px;
-  perspective: 600;
   position: relative;
-  margin: 4rem auto;
+  margin: 4rem auto 1rem;
   @media (max-width: 600px) {
     min-height: 300px;
   }
@@ -38,23 +37,6 @@
       transform: rotateY(180deg);
     }
   }
-  .sourceContainer {
-    position: absolute;
-    bottom: 2rem;
-    right: 2rem;
-    color: $primary-color;
-    a {
-      display: flex;
-      align-items: center;
-      gap: 0.25rem;
-      text-transform: uppercase;
-      font-size: 0.75rem;
-      svg {
-        width: 1rem;
-        height: 1rem;
-      }
-    }
-  }
   .showAnswer {
     transform: rotateY(180deg);
     backface-visibility: hidden;
@@ -66,7 +48,26 @@
   }
 }
 
+.sourceContainer {
+  display: inline-block;
+  a {
+    background: $primary-color;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    svg {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+}
+
 .answerButton {
+  display: block;
   background: $primary-color;
   margin: 2rem auto;
   height: 100px;
