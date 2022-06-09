@@ -6,6 +6,9 @@
   perspective: 600;
   position: relative;
   margin: 4rem auto;
+  @media (max-width: 400px) {
+    min-height: 300px;
+  }
   .card {
     position: absolute;
     height: 100%;
