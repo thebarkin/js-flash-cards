@@ -100,7 +100,31 @@
       "id": "17",
       "question": "What is the execution context?",
       "answer": "When a JS file is executed in the browser, firstly, there is a Creation phase, which will give you access to the Window Object and 'this' which Window is assigned to. After the Creation phase, it will be the execution phase, where variables and functions are executed. Whenever a function is executed, it too will have it's own  Creation and execution phase with it's own variables. Whenever the Execution phase for a function is complete, the function's Execution Context is then removed. At the end, you'll be left with the global execution context, with global variables and root function(s).",
-      "sourceLink": ""
+      "sourceLink": "https://www.youtube.com/watch?v=lT0Lf2Ndfec&list=PLADp2tn-qPswTdgNuAakyYAvDCp8tqcQW&index=2"
+    },
+    {
+      "id": "18",
+      "question": "What is hoisting?",
+      "answer": "During the Creation phase, JS will scan the entire file for all global variables and store the names globally, however they won't be defined, instead JS will assigned space for them. The values for global variables will be given during the Execution phase. Variables are partially hoisted during the Execution phase. Additionally, if you have the same variable name twice, only one will be Hoisted. Functions on the other hand will be Hoisted during the Creation phase. Duplicate variables and function names will be replaced during the Creation phase. With 'let' and 'const' it will not get initialized during the Creation phase.",
+      "sourceLink": "https://www.youtube.com/watch?v=7XbfeMQyW4Q&list=PLADp2tn-qPswTdgNuAakyYAvDCp8tqcQW&index=3"
+    },
+    {
+      "id": "19",
+      "question": "What is Scope Chain?",
+      "answer": "Whenever a function, within a function is looking for a value of a variable, it will first check itself, its own local memory, if not found, it will check its lexical parent, or parent function for the variable value. If not found, it will keep checking parents until it reaches the global variables. Every function has a Reference to its lexical environment/parent. Once found, the chain will stop searching for the referenced variable.",
+      "sourceLink": "https://www.youtube.com/watch?v=oS8rtS8j7r0&list=PLADp2tn-qPswTdgNuAakyYAvDCp8tqcQW&index=4"
+    },
+    {
+      "id": "20",
+      "question": "What is Function and Block scope?",
+      "answer": "When a function is executed, a scope is created for that function. Meaning any variables a function has will be accessible inside the function, not outside the function. Brackets created block scopes. Variables declared insides curly brackets are not block scoped. Variables with 'let' or 'const' are blocked scoped, where are 'var' is Function Scoped. Also, a variable declared with 'var' can be re-declared, however a variable with 'let' cannot be re-declared, in the same Block scope.",
+      "sourceLink": "https://www.youtube.com/watch?v=mxqjBtYZmuU&list=PLADp2tn-qPswTdgNuAakyYAvDCp8tqcQW&index=5"
+    },
+    {
+      "id": "21",
+      "question": "What is 'this'?",
+      "answer": "By default the value of 'this' is the Window object. Whenever calling a function/method that is not part of an object, 'this' will be equal to the Window object. When calling a method from inside an object, 'this' will be referencing the object itself. If however, you can an 'arrow' function inside of a method in an object, the 'this' property will reference its parent object.",
+      "sourceLink": "https://www.youtube.com/watch?v=Qew1GY6sxdY&list=PLADp2tn-qPswTdgNuAakyYAvDCp8tqcQW&index=6"
     }
   ]
 }
